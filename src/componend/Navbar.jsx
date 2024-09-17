@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; 
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "Donation", href: "/donation" },
+  { name: "Github", href: "/github" },
+  { name: "Discord", href: "/discord" },
+  { name: "Nostr", href: "/nostr" },
 ];
 
 function Navbar() {
