@@ -57,7 +57,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-        <div className="flex flex-col mt-4 space-y-2 hover:opacity-80 ">
+        <div className="flex flex-col absolute w-72 z-20 font-semibold  bg-white mt-4 space-y-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
