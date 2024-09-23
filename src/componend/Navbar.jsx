@@ -17,12 +17,12 @@ function Navbar() {
   };
 
   return (
-    <nav className=" select-none px-7 lg:px-16 py-8 ">
+    <nav className=" select-none px-5 lg:px-28 py-8 ">
       <div className="w-full  flex justify-between items-center mx-auto">
         {/* Logo Section */}
         <div className="flex items-center">
           <a href="/">
-            <img className="h-8 w-auto" src="/logo.png" alt="Logo" />
+            <img className="h-8 w-auto" src="/nav-img/logo.png" alt="Logo" />
           </a>
         </div>
 
