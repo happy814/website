@@ -25,7 +25,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 lg:pt-10 gap-8 pt-10 ">
+        <div className="grid md:grid-cols-4 lg:pt-10 gap-8  ">
           {/* Map over the  DATA */}
           {DATA.map((card) => (
             <div key={card.id} className=" tracking-widest text-white">
