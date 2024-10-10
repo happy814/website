@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const navLinks = [
   { name: "Home", href: "#" },
   { name: "Services", href: "#" },
-  { name: "Store", href: "#" },
+  { name: "Merch Store", href: "#" },
   { name: "About Us", href: "#" },
   { name: "Contact Us", href: "#" },
 ];
@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="select-none px-7 lg:px-6 py-5 relative bg-[#151217] border-b-2 border-white">
+    <nav className="select-none pt-10 px-7 lg:px-6 py-5 relative bg-[#151217] border-b-2 border-white">
       <div className="w-full flex justify-between items-center mx-auto">
         {/* Logo Section */}
         <div className="flex items-center relative z-30 ">
@@ -26,7 +26,7 @@ function Navbar() {
         </div>
 
         {/* Menu Links (for larger screens) */}
-        <div className="hidden md:flex space-x-8 md:pl-16 lg:pl-96">
+        <div className="hidden uppercase md:flex space-x-5 md:pl-16 lg:pl-80">
           {navLinks.map((link) => (
             <a
               key={link.name}

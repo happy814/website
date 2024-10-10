@@ -1,19 +1,19 @@
-<div class="md:w-screen md:flex flex-col overflow-hidden hidden">
+<section class="md:w-screen md:flex flex-col overflow-hidden hidden pb-10">
   <div
     class="flex mb:flex-row items-center bg-[#151217] text-white justify-center lg:max-h-fit lg:pt-28 space-y-10 lg:space-y-0 lg:-space-x-11 pb-28 md:pt-32"
   >
     <!-- Circles Container -->
-    <div class="flex md:relative md:pt-10 lg:pt-0">
+    <div class="flex md:relative md:pt-10 lg:pt-0 lg:pb-10">
       <!-- Outer Pink Circle -->
       <div
-        class="lg:w-60 lg:h-60 md:w-48 md:h-48 w-32 h-32 md:left-8 lg:left-0 rounded-full bg-[#995BD9] md:absolute"
+        class="lg:w-60 lg:h-60 md:w-56 md:h-56 w-32 h-32 md:left-8 lg:left-0 rounded-full bg-[#995BD9] md:absolute"
       >
       </div>
 
       <!-- Inner Circle with "HIRE US" Labels -->
       <div>
         <div
-          class="lg:w-60 lg:h-60 md:h-48 md:w-48 w-32 h-32 rounded-full border-2 border-white flex justify-center items-center mx-auto md:relative z-10 md:left-28"
+          class="lg:w-60 lg:h-60 md:h-56 md:w-56 w-32 h-32 rounded-full border-2 border-white flex justify-center items-center mx-auto md:relative z-10 md:left-28"
         >
           <div class="flex justify-center items-center">
             <!-- Rotating "HIRE US" Labels around the circle -->
@@ -22,22 +22,22 @@
             >
               <span
                 id="1"
-                class="absolute lg:top-2 md:top-0 lg:left-20 -rotate-[8deg] pr-5 md:pt-2 lg:pt-0 text-white"
+                class="absolute lg:top-2 md:top-0 lg:left-20 lg:-rotate-[8deg] md:-rotate-[5deg] md:pr-2 lg:pr-5 md:pt-2 lg:pt-0 text-white"
                 >HIRE US</span
               >
               <span
                 id="2"
-                class="absolute md:pb-8 lg:pb-3 md:right-5 md:bottom-24 lg:bottom-40 lg:right-[10%] pr-1 lg:rotate-[50deg] md:rotate-[55deg] text-white"
+                class="absolute md:pb-8 lg:pb-3 md:right-5 md:bottom-28 lg:bottom-40 lg:right-[10%] pr-1 lg:rotate-[50deg] md:rotate-[64deg] text-white"
                 >HIRE US</span
               >
               <span
                 id="3"
-                class="absolute right-0 lg:bottom-24 text-white lg:-rotate-[80deg] md:-rotate-[60deg] md:bottom-12"
+                class="absolute right-0 lg:bottom-[5.5rem] text-white lg:-rotate-[80deg] md:-rotate-[60deg] md:bottom-12 md:pb-3"
                 >HIRE US</span
               >
               <span
                 id="4"
-                class="absolute lg:bottom-8 md:bottom-3 md:pr-7 lg:pr-3 right-8 lg:-rotate-[38deg] text-white"
+                class="absolute lg:bottom-8 md:bottom-3 md:pr-10 lg:pr-3 right-8 lg:-rotate-[38deg] md:-rotate-[5deg] text-white"
                 >HIRE US</span
               >
               <span
@@ -48,12 +48,12 @@
 
               <span
                 id="6"
-                class="absolute lg:bottom-[4rem] md:bottom-9 pb-3 left-0 rotate-[65deg] text-white"
+                class="absolute lg:bottom-[4rem] md:bottom-9 md:pb-6 lg:pb-3 left-0 lg:rotate-[65deg] md:rotate-[60deg] text-white"
                 >HIRE US</span
               >
               <span
                 id="7"
-                class="absolute lg:top-[20%] md:top-8 md:pb-5 lg:pb-0 pr-6 left-[1%] -rotate-[58deg] md:-rotate-[65deg] text-white"
+                class="absolute lg:top-[20%] md:top-8 md:pb-5 lg:pb-0 lg:pr-6 md:pr-10 left-[1%] -rotate-[58deg] md:-rotate-[65deg] text-white"
                 >HIRE US</span
               >
 
@@ -74,17 +74,17 @@
 
     <!-- Text Section -->
     <div
-      class="flex top-48 md:top-0 flex-col md:justify-center relative md:pl-40 lg:pl-0 lg:max-w-7xl md:max-w-6xl text-center lg:text-left md:text-left"
+      class="flex top-48 md:top-0 flex-col md:justify-center relative md:pl-44 lg:pl-0 lg:max-w-7xl md:max-w-6xl text-center lg:text-left md:text-left"
     >
-      <div class="flex lg:pl-80">
-        <h1 class="lg:text-4xl md:text-2xl font-normal mb-4">
+      <div class="flex lg:pl-72 pl-5">
+        <h1 class="lg:text-5xl md:text-3xl font-normal mb-4">
           <div class="flex flex-col leading-tight hover:text-blue-500">
-            <span>PRIVACY-FOCUSED, </span>
-            <span> SELF-SOVEREIGNTY</span>
-            <span> SOFTWARE DEVELOPERS</span>
+            PRIVACY-FOCUSED,<br />
+            SELF-SOVEREIGNTY<br />
+            SOFTWARE DEVELOPERS
           </div>
         </h1>
-        <div class="lg:absolute lg:pl-[22rem] lg:pt-5">
+        <div class="absolute md:pl-72 lg:pl-[28rem] lg:pt-10">
           <img
             class="object-cover w-16 h-16"
             src="/hero-img/wings.png"
@@ -92,13 +92,22 @@
           />
         </div>
       </div>
-      <div class="lg:pl-80 pt-12">
-        <img src="/hero-img/line.png" alt="line" />
+      <div class="lg:pl-72 md:pl-6 pt-12">
+        <img class="w-52" src="/hero-img/line.png" alt="line" />
       </div>
-      <div class="flex lg:pl-96 pl-12 hover:text-orange-500 pt-6">
-        <p class="text-sm md:pr-10 font-serif max-w-sm">
+      <div
+        class="hidden lg:flex lg:pl-96 lg:ml-8 md:pl-20 hover:text-orange-500 pt-6"
+      >
+        <p class="text-xs font-normal max-w-md">
           Cryptography and FOSS are the two primary tools of ours. We are
-          utilizing Bitcoin (not crypto!) to achieve our goals.
+          utilizing<br /> Bitcoin (not crypto), and nostr among other things to achieve
+          our goals.
+        </p>
+      </div>
+      <div class="lg:hidden md:flex md:pl-14 hover:text-orange-500 pt-6">
+        <p class="text-xs font-normal max-w-md">
+          Cryptography and FOSS are the two primary tools of ours.<br /> We are utilizing
+          Bitcoin (not crypto), and nostr among other things to achieve our goals.
         </p>
       </div>
     </div>
@@ -107,13 +116,13 @@
   <div class="flex justify-center lg:h-96 md:h-60 lg:w-screen">
     <div class="relative lg:max-w-5xl md:max-w-3xl">
       <!-- Box Image -->
-      <div class="lg:max-w-4xl md:max-w-xl">
+      <div class="lg:max-w-4xl md:max-w-2xl">
         <img src="/hero-img/box.png" alt="box" />
       </div>
 
       <!-- Spiral Image Positioned to the Right -->
       <div
-        class="top-1/2 transform lg:-translate-y-56 md:-translate-y-36 translate-x-96 lg:pl-[30rem] md:pl-40 absolute"
+        class="top-1/2 transform lg:-translate-y-56 md:-translate-y-36 translate-x-96 lg:pl-[30rem] md:pl-64 absolute"
       >
         <img
           class="lg:w-20 w-16 h-18 lg:h-32"
@@ -123,7 +132,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- For Mobile Screens (it is a temporary) -->
 <div class="block md:hidden w-full overflow-hidden relative z-10">
@@ -163,9 +172,9 @@
     <!-- Text Section -->
     <div class="text-center max-w-xs px-4">
       <h1 class="text-lg font-normal leading-tight">
-        <span>PRIVACY-FOCUSED,</span><br />
-        <span>SELF-SOVEREIGNTY</span><br />
-        <span>SOFTWARE DEVELOPERS</span>
+        PRIVACY-FOCUSED,<br />
+        SELF-SOVEREIGNTY<br />
+        SOFTWARE DEVELOPERS
       </h1>
       <div class="py-4">
         <img src="/hero-img/wings.png" alt="wings" class="w-12 h-12 mx-auto" />
@@ -173,7 +182,7 @@
       <div class="pt-4">
         <img src="/hero-img/line.png" alt="line" class="w-full" />
       </div>
-      <div class="pt-4 text-sm font-serif">
+      <div class="pt-4 text-sm font-normal">
         Cryptography and FOSS are the two primary tools of ours. We are
         utilizing Bitcoin (not crypto!) to achieve our goals.
       </div>
