@@ -1,0 +1,194 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { aboutContent } from "../context/index.js";
+import { paragraphContent } from "../context/index.js";
+---
+
+<Layout>
+  <section
+    class="max-w-7xl md:mx-auto lg:px-12 py-48 space-y-12 lg:space-y-0 select-none"
+  >
+    <!-- 1st main div -->
+    <div class="flex justify-center">
+      <!-- 2nd main div -->
+      <div class="flex flex-col md:w-auto">
+        <div class="hidden md:flex absolute">
+          <img
+            class="h-16 top-7 left-24 relative"
+            src="/about/s-car.png"
+            alt="s-car"
+          />
+          <img
+            class="h-16 relative top-4 left-24"
+            src="/about/Ellipse.png"
+            alt="Ellipse"
+          />
+          <div class="relative flex md:gap-16 lg:gap-20 top-10 left-36">
+            {
+              Array(5)
+                .fill("")
+                .map((_) => <p class="text-gray-300 ">{paragraphContent}</p>)
+            }
+          </div>
+        </div>
+
+        <div class="flex flex-col md:pr-16 py-20 lg:pl-20">
+          <div class="hidden lg:flex">
+            <img src="/about/big-line.png" alt=" big line" />
+          </div>
+          <!-- md screen img -->
+          <div class="lg:hidden relative left-12">
+            <img src="/about/big-line.png" alt=" big line" />
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start md:space-x-20 lg:space-x-36"
+        >
+          <!-- Left Column: About Text -->
+          <div class="lg:w-1/2 space-y-10 flex flex-col max-w-xl">
+            <h1 class="text-6xl lg:text-8xl font-bold text-white">ABOUT</h1>
+
+            <!-- all text -->
+            <div class="space-y-8">
+              <div class="pl-20">
+                <img class="pb-2" src="/about/line.png" alt="" />
+                <h2 class="text-xl lg:text-2xl font-semibold text-white mb-6">
+                  Our Vision
+                </h2>
+                {
+                  aboutContent.vision.map((paragraph) => (
+                    <p class="text-gray-300 mb-5 text-xs w-44 md:w-80">
+                      {paragraph}
+                    </p>
+                  ))
+                }
+
+                {
+                  aboutContent.vision2.map((paragraph2) => (
+                    <p class="text-gray-300 mb-5 text-xs w-44  md:w-80">
+                      {paragraph2}
+                    </p>
+                  ))
+                }
+
+                <div class="pt-10">
+                  <img class="pb-2" src="/about/line.png" alt="line" />
+                  <h2 class="text-xl lg:text-2xl font-semibold text-white mb-6">
+                    Our Mission
+                  </h2>
+                  {
+                    aboutContent.mission.map((paragraph3) => (
+                      <p class="text-gray-300 mb-5 leading-relaxed text-xs   md:w-80 w-44 ">
+                        {paragraph3}
+                      </p>
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Circle main flex -->
+          <div class="flex">
+            <!-- Outer Pink Circle -->
+            <div
+              class="w-32 relative top-24 h-32 rounded-full bg-[#995BD9] left-10"
+            >
+            </div>
+
+            <!-- Inner Circle with "HIRE US" Labels -->
+            <div class="relative top-24 right-5">
+              <div
+                class="w-32 h-32 rounded-full border-2 border-white flex justify-center items-center md:mx-auto"
+              >
+                <div
+                  class="absolute h-full w-full flex items-center justify-center"
+                >
+                  <!-- Center Image -->
+                  <div
+                    class="absolute w-10 h-10 rounded-full bg-green-500 flex items-center justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
+                  >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Image & Drivers Section -->
+            <div
+              class="space-y-5 pr-10 flex absolute flex-col md:max-w-7xl items-center"
+            >
+              <!-- big car -->
+              <div class="flex pt-10 z-30 select-none">
+                <img
+                  src="/about/car.png"
+                  alt="Car Image"
+                  class="max-w-md h-56"
+                />
+              </div>
+              <!-- main div for name and drivers -->
+              <div class="flex flex-col h-auto">
+                <div class="flex flex-col items-end select-none">
+                  <img
+                    class="object-cover w-20 pb-2"
+                    src="/about/line.png"
+                    alt="line"
+                  />
+                  <h2
+                    class="text-xl lg:text-2xl font-semibold text-white mb-4 text-center"
+                  >
+                    Our Drivers
+                  </h2>
+                </div>
+
+                <div class="flex flex-col mb-20">
+                  <!-- Row 1 -->
+                  <div
+                    class="flex justify-between mr-8 md:mr-0 gap-5 md:gap-11"
+                  >
+                    <!-- Image 1 -->
+                    <div class="select-none">
+                      <img
+                        src="/about/Frame.png"
+                        alt="Driver 1"
+                        class="w-24 select-none"
+                      />
+                    </div>
+                    <!-- Image 2 (positioned lower) -->
+                    <div class="relative top-16 select-none">
+                      <img
+                        src="/about/Frame.png"
+                        alt="Driver 2"
+                        class="w-24 select-none"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Row 2 -->
+                  <div
+                    class="flex justify-between mr-8 md:mr-0 relative md:left-5 select-none"
+                  >
+                    <!-- Image 3 -->
+
+                    <img
+                      src="/about/Frame.png"
+                      alt="Driver 3"
+                      class="w-24 relative top-10"
+                    />
+
+                    <!-- Image 4 -->
+                    <div class="select-none">
+                      <img
+                        src="/about/Frame.png"
+                        alt="Driver 4"
+                        class="w-24 relative top-28"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
