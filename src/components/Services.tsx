@@ -22,12 +22,12 @@ const Services: React.FC = () => {
           <div className="mt-10 flex">
             <img
               className="w-36 h-44 lg:w-56 md:h-56 md:w-44 lg:h-72"
-              src="/Services/me.png"
+              src="/Services/memory.png"
               alt="Service"
             />
             <img
               className="h-44 md:h-56 lg:h-72 pl-7"
-              src="/Services/Rectangle.png"
+              src="/Services/Rectangle1.png"
               alt="Rectangle"
             />
           </div>
@@ -39,12 +39,12 @@ const Services: React.FC = () => {
             <div key={card.id} className="mx-auto">
               <div className="tracking-widest text-white">
                 <div className="text-lg font-bold mb-2">{card.number}</div>
-                <img className="pb-5" src="/Services/line2.png" alt="line" />
+                <img className="pb-5" src="/Services/line.png" alt="line" />
                 <h3 className="lg:text-xl md:text-sm mb-4">{card.title}</h3>
                 <img
                   className="h-8 w-20"
-                  src="/Services/explore.png"
-                  alt="explore"
+                  src="/Services/exploreImg.png"
+                  alt="exploreImg"
                 />
               </div>
             </div>
