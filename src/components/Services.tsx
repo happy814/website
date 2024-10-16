@@ -39,7 +39,7 @@ const Services: React.FC = () => {
             <div key={card.id} className="mx-auto">
               <div className="tracking-widest text-white">
                 <div className="text-lg font-bold mb-2">{card.number}</div>
-                <img className="pb-5" src="/Services/line.png" alt="line" />
+                <img className="pb-5" src="/Services/line2.png" alt="line" />
                 <h3 className="lg:text-xl md:text-sm mb-4">{card.title}</h3>
                 <img
                   className="h-8 w-20"
