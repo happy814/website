@@ -8,16 +8,17 @@ import Navbar from "../components/Navbar";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>website</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   </head>
-  <body class="bg-[#151217]">
+  <body class="bg-[#151217] "> <!-- Applying the font globally -->
     <header>
       <Navbar client:load />
     </header>
     <main>
       <slot />
     </main>
-    <!-- <footer>
-      <p>© 2024 My Astro Site. All rights reserved.</p>
-    </footer> -->
   </body>
 </html>

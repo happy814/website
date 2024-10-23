@@ -5,86 +5,80 @@ import { paragraphContent } from "../context/index.js";
 ---
 
 <Layout>
-  <section
-    class="md:max-w-3xl w-full lg:max-w-7xl mx-auto lg:px-12 space-y-12 lg:space-y-0 select-none lg:p-8"
-  >
+  <section class="flex justify-center  lg:max-w-7xl mx-auto space-y-12 lg:space-y-0  ">
     <!-- Main Flex Container -->
     <div class="flex flex-col md:top-36 relative lg:left-0 left-5">
       <div class="hidden md:flex absolute">
         <img
-          class="h-16 top-7 left-24 relative md:left-12 lg:left-24"
+          class="lg:h-[88px] h-16 top-3 left-10 relative lg:left-28"
           src="/about/sCar.png"
           alt="sCar"
         />
         <img
-          class="h-16 relative top-4 left-24 md:left-12 lg:left-24"
+          class="h-[88px] relative bottom-2 left-24 md:left-12 lg:left-24"
           src="/about/EllipseImg.png"
           alt="EllipseImg"
         />
-        <div
-          class="relative flex md:gap-16 lg:gap-20 top-10 md:left-24 lg:left-36"
-        >
-          {
-            Array(5)
-              .fill("")
-              .map((_) => <p class="text-gray-300 ">{paragraphContent}</p>)
-          }
+        <div class="relative flex md:gap-10 lg:gap-20 top-10 md:left-24 lg:left-36">
+          {Array(5).fill("").map((_) => <p class="text-gray-300">{paragraphContent}</p>)}
         </div>
       </div>
 
       <!-- About Section -->
       <div class="flex flex-col md:pr-16 py-20 lg:pl-20">
-        <div class="hidden lg:flex">
-          <img class="" src="/about/bigLine.png" alt=" bigLine" />
+        <div class="hidden lg:flex max-w-5xl">
+          <img class="" src="/about/bigLine.png" alt="bigLine" />
         </div>
-        <div class="hidden md:flex lg:hidden relative md:left-8">
-          <img src="/about/bigLine.png" alt=" bigLine" />
+        <div class="hidden md:flex lg:hidden max-w-2xl">
+          <img src="/about/bigLine.png" alt="bigLine" />
         </div>
       </div>
 
-      <div
-        class="flex flex-col md:flex-row items-center md:space-x-24 lg:space-x-36"
-      >
-        <!-- Left Column: About Text -->
-        <div class="lg:w-1/2 space-y-16 flex flex-col max-w-xl">
-          <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white">
-            ABOUT
-          </h1>
+      <div class="flex flex-col md:flex-row justify-center  lg:space-x-20">
+        <!-- Left Column:About Text main  -->
+        <div class="md:space-y-16 space-y-10 flex flex-col relative bottom-20 md:bottom-0">
+          <div class=" hidden lg:flex ">
+            <h1
+              class=" xl:-ml-[4.5rem]  lg:text-[105px] lg-xl:text-[153.85px] font-happy font-semibold text-white"
+            >
+              ABOUT
+            </h1>
+          </div>
+            <!-- Left Column:About Text for sm screen -->
+          <div class="flex lg:hidden relative  md:right-10  ">
+            <h1
+              class="text-5xl md:text-8xl  font-happy font-semibold text-white"
+            >
+              ABOUT
+            </h1>
+          </div>
 
           <!-- Text Blocks with Responsive Widths -->
           <div class="space-y-8">
-            <div class="pl-5 md:pl-12 lg:pl-20">
+            <div class="md:pr-28 lg:pl-20">
               <img class="pb-2" src="/about/line2.png" alt="line2" />
-              <h2
-                class="text-lg md:text-xl lg:text-2xl font-semibold text-white mb-6"
-              >
+              <h2 class="text-lg md:text-xl lg:text-2xl font-semibold text-white mb-6">
                 Our Vision
               </h2>
               {
                 aboutContent.vision.map((paragraph) => (
-                  <p class="text-gray-300 mb-5 text-xs s w-52 md:w-64 lg:w-80">
-                    {paragraph}
-                  </p>
+                  <p class="text-gray-300 mb-5 text-sm s w-52 md:w-64 font-happy lg:w-80 leading-tight">{paragraph}</p>
                 ))
               }
               {
                 aboutContent.vision2.map((paragraph2) => (
-                  <p class="text-gray-300 mb-5 text-xs  w-52 md:w-64 lg:w-80">
-                    {paragraph2}
-                  </p>
+                  <p class="text-gray-300 font-happy mb-5 text-sm w-52 md:w-64 lg:w-80 leading-tight">{paragraph2}</p>
                 ))
               }
 
               <div class="pt-10">
                 <img class="pb-2" src="/about/line2.png" alt="line2" />
-                <h2
-                  class="text-lg md:text-xl lg:text-2xl font-semibold text-white mb-6"
-                >
+                <h2 class="text-lg md:text-xl lg:text-2xl font-semibold text-white mb-6">
                   Our Mission
                 </h2>
                 {
                   aboutContent.mission.map((paragraph3) => (
-                    <p class="text-gray-300 leading-relaxed  text-xs md:w-64 lg:w-80 w-52">
+                    <p class="text-gray-300  font-happy text-sm md:w-64 lg:w-80 w-52 leading-tight">
                       {paragraph3}
                     </p>
                   ))
@@ -95,25 +89,21 @@ import { paragraphContent } from "../context/index.js";
         </div>
 
         <!-- Right Column with Images -->
-        <div class="flex flex-col items-center space-y-5 pr-5 md:pr-0 lg:pr-10">
-          <!-- Circle Section with "HIRE US" Labels -->
-          <div class="relative left-3">
+        <div class="flex flex-col items-center  space-y-5 md:pr-0 relative md:top-16 lg:top-0 ">
+          <!-- Circle  -->
+          <div class="relative  lg:left-5">
             <div
-              class="w-24 right-16 md:w-36 h-24 md:h-36 rounded-full bg-[#995BD9] relative top-12 md:top-24"
-            >
-            </div>
-            <div class="absolute top-12 md:top-24 right-0">
+              class="w-24 right-12 md:right-16 md:w-40 h-24 md:h-40 lg:h-52 lg:w-52 rounded-full bg-[#995BD9] relative top-12 md:top-28 lg:top-40 lg:right-24"
+            />
+            <div class="absolute top-12 md:top-28 lg:top-40 right-0">
               <div
-                class="w-24 md:w-36 h-24 md:h-36 rounded-full border-2 border-white flex justify-center items-center"
+                class="w-24 md:w-40 h-24 md:h-40 lg:h-52 lg:w-52 rounded-full border-2 border-white flex justify-center items-center"
               >
-                <div
-                  class="absolute h-full w-full flex items-center justify-center"
-                >
+                <div class="absolute h-full w-full flex items-center justify-center">
                   <!-- Center Image -->
                   <div
-                    class="absolute w-12 h-12 rounded-full bg-green-500 flex items-center justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
-                  >
-                  </div>
+                    class="absolute w-12 h-12 lg:h-[73.62px] lg:w-[73.62px] md:w-16 md:h-16 rounded-full bg-green-500 flex items-center justify-center top-1/2 md:top-[85px] lg:top-32 lg:left-28 left-12 md:left-[105px] transform -translate-x-1/2 -translate-y-1/2 z-20"
+                  />
                 </div>
               </div>
             </div>
@@ -124,45 +114,39 @@ import { paragraphContent } from "../context/index.js";
             <img
               src="/about/bigCar.png"
               alt="bigCar Image"
-              class="max-w-sm md:max-w-md h-40 md:h-56"
+              class="max-w-sm md:max-w-md h-40 md:h-60 lg:h-80"
             />
           </div>
+
           <div
-            class="flex flex-col items-end relative bottom-28 select-none left-14"
+            class="flex flex-col md:items-end relative bottom-28 select-none lg:left-28 md:left-20 left-14"
           >
-            <img
-              class="object-cover w-20 pb-2"
-              src="/about/line2.png"
-              alt="line2"
-            />
-            <h2
-              class="text-xl lg:text-2xl font-semibold text-white mb-4 text-center"
-            >
+            <img class="object-cover w-20 pb-2" src="/about/line2.png" alt="line2" />
+            <h2 class="text-base md:text-xl lg:text-2xl font-semibold text-white mb-4 md:text-center">
               Our Drivers
             </h2>
           </div>
-          <!-- Driver Images Section -->
-          <div class="flex flex-col relative bottom-36">
-            <div class="flex justify-between gap-4 md:gap-10">
-              <img src="/about/bigFrame.png" alt="Driver 1" class="w-16 md:w-24" />
+
+          <!-- memory Images Section -->
+          <div class="flex flex-col relative bottom-36 md:bottom-20">
+            <div class="flex justify-between gap-4 md:gap-10 lg-xl:gap-20">
+              <img src="/about/bigFrame.png" alt="Driver 1" class="w-20 lg:w-[150.98px] md:w-28" />
               <img
                 src="/about/bigFrame.png"
                 alt="Driver 2"
-                class="w-16 md:w-24 relative top-6 md:top-16"
+                class="w-20 md:w-28 lg:w-[150.98px] relative top-6 md:top-16"
               />
             </div>
-            <div
-              class="flex justify-between relative gap-4 md:gap-10 left-1 md:left-5"
-            >
+            <div class="flex justify-between relative gap-4 md:gap-10 left-1 md:left-5">
               <img
                 src="/about/bigFrame.png"
                 alt="Driver 3"
-                class="w-16 md:w-24 relative top-6 md:top-10"
+                class="w-20 md:w-28 lg:w-[150.98px] relative top-6 md:top-10"
               />
               <img
                 src="/about/bigFrame.png"
                 alt="Driver 4"
-                class="w-16 md:w-24 relative top-10 md:top-28"
+                class="w-20 md:w-28 lg:w-[150.98px] relative top-10 md:top-28"
               />
             </div>
           </div>

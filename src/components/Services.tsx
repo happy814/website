@@ -10,11 +10,11 @@ interface Card {
 
 const Services: React.FC = () => {
   return (
-    <section className="bg-[#995BD9] w-screen select-none">
-      <div className="md:max-w-2xl lg:max-w-4xl pt-10 mx-auto flex flex-col">
+    <section className="bg-[#995BD9] ">
+      <div className="md:max-w-2xl lg:max-w-4xl pt-10 mx-auto flex flex-col ">
         {/* Title Section */}
-        <div className="flex md:flex-row flex-col md:justify-between justify-center items-center">
-          <h2 className="text-[#FFFFFF] text-2xl lg:text-4xl pt-10 tracking-widest mb-8 text-left lg:leading-tight font-sans">
+        <div className="flex md:flex-row flex-col md:justify-between justify-center items-center ">
+          <h2 className="text-[#FFFFFF] text-2xl md:text-3xl lg:text-4xl  tracking-widest mb-16 text-left lg:leading-tight font-happy">
             INNOVATING TO<br></br> MEET YOUR HIGHEST
             <br /> EXPECTATIONS
           </h2>
