@@ -14,7 +14,7 @@ const Services: React.FC = () => {
       <div className="md:max-w-2xl lg:max-w-4xl pt-10 mx-auto flex flex-col ">
         {/* Title Section */}
         <div className="flex md:flex-row flex-col md:justify-between justify-center items-center ">
-          <h2 className="text-[#FFFFFF] text-2xl md:text-3xl lg:text-4xl  tracking-widest mb-16 text-left lg:leading-tight font-happy">
+          <h2 className="text-[#FFFFFF] text-2xl md:text-3xl lg:text-4xl  tracking-widest mb-16 text-left lg:leading-tight  font-base">
             INNOVATING TO<br></br> MEET YOUR HIGHEST
             <br /> EXPECTATIONS
           </h2>
