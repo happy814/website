@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        happy: ["Libre Franklin"],
+        base: ["Libre Franklin"],
       },
       screens: {
         "lg-xl": "1198px",
