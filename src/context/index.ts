@@ -118,3 +118,76 @@ export const clientWorkData: ClientWork[] = [
     line: "/Client/line.png",
   },
 ];
+export interface Product {
+  id: number;
+  image: string;
+  title: string;
+  price: number;
+  category: string;
+}
+
+export const merchData: Product[] = [
+  {
+    id: 1,
+    title: "Self-Custody",
+    image: "/store/Items4.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+  {
+    id: 2,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+  {
+    id: 3,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items2.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+  {
+    id: 4,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items5.png",
+    price: 700,
+    category: "T-Shirt",
+  },
+  {
+    id: 5,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items3.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+  {
+    id: 6,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items5.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+  {
+    id: 7,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items4.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+  {
+    id: 8,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items5.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+  {
+    id: 9,
+    title: "Self-Custody T-Shirt",
+    image: "/store/Items2.png",
+    price: 700,
+    category: "T-Shirts",
+  },
+];
