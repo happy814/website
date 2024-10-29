@@ -1,11 +1,9 @@
-// Define a type for the structure of each data item in the DATA array
 export interface DataItem {
   id: number;
   number: string;
   title: string;
 }
 
-// Define the type of the entire DATA array as an array of DataItem objects
 export const DATA: DataItem[] = [
   {
     id: 1,
@@ -29,7 +27,6 @@ export const DATA: DataItem[] = [
   },
 ];
 
-// Define the type for paragraphContent as a simple string
 export const paragraphContent: string = "GOALS";
 
 // Define types for the structure of aboutContent
@@ -73,3 +70,51 @@ export const aboutContent: AboutContent = {
     `,
   ],
 };
+// Define types for the structure of Client Content
+export interface ClientWork {
+  id: number;
+  title: string;
+  description: string;
+  buttonimg: string;
+  imageUrl: string;
+  line: string;
+}
+
+export const clientWorkData: ClientWork[] = [
+  {
+    id: 1,
+    title: "NAME OF THE PROJECT",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Bibendum morbi est dignissim lobortis sem augue ullamcorper suspendisse diam. Ipsum suscipit sed in vitae suspendisse amet. Ut viverra praesent donec amet feugiat sem eget. Consectetur sagittis consequat pretium vitae non phasellus vel senectus.",
+    buttonimg: "/Client/explore.png",
+    imageUrl: "/Client/VectorM.png", // Replace with the actual image path
+    line: "/Client/line.png",
+  },
+  {
+    id: 2,
+    title: "NAME OF THE PROJECT",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Bibendum morbi est dignissim lobortis sem augue ullamcorper suspendisse diam. Ipsum suscipit sed in vitae suspendisse amet.",
+    buttonimg: "/Client/explore.png",
+    imageUrl: "/Client/VectorM.png",
+    line: "/Client/line.png",
+  },
+  {
+    id: 3,
+    title: "NAME OF THE PROJECT",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Bibendum morbi est dignissim lobortis sem augue ullamcorper suspendisse diam. Ipsum suscipit sed in vitae suspendisse amet. Ut viverra praesent donec amet feugiat sem eget. Consectetur sagittis consequat pretium vitae non phasellus vel senectus. orper suspendisse diam. Ipsum suscipit sed in vitae suspendisse amet. Ut viverra praesent donec amet feugiat sem eget. Consectetur sagittis conse",
+    buttonimg: "/Client/explore.png",
+    imageUrl: "/Client/VectorM.png",
+    line: "/Client/line.png",
+  },
+  {
+    id: 4,
+    title: "NAME OF THE PROJECT",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Bibendum morbi est dignissim lobortis sem augue ullamcorper suspendisse diam. Ipsum suscipit sed in vitae suspendisse amet. Ut viverra praesent donec amet feugiat sem eget. Consectetur sagittis consequat pretium vitae non phasellus vel senectus. c amet feugiat sem eget. Consectetur sagittis consequat pretium vitae no",
+    buttonimg: "/Client/explore.png",
+    imageUrl: "/Client/VectorM.png",
+    line: "/Client/line.png",
+  },
+];
