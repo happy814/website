@@ -118,6 +118,7 @@ export const clientWorkData: ClientWork[] = [
     line: "/Client/line.png",
   },
 ];
+
 export interface Product {
   id: number;
   image: string;
@@ -189,5 +190,20 @@ export const merchData: Product[] = [
     image: "/store/Items2.png",
     price: 700,
     category: "T-Shirts",
+
+export interface Support {
+  id: number;
+  // heading: string;
+  description: string;
+  buttonText: string;
+}
+
+export const missionData: Support[] = [
+  {
+    id: 1,
+    // heading: `EMPOWER CHANGE: SUPPORT OUR MISSION`,
+    description: `Support our mission by making a donation today. Your contribution helps us continue to build privacy-focused, censorship-resistant software that empowers individuals to take control of their data and online freedom. Every donation, no matter the size, directly fuels our ability to innovate, develop new tools, and enhance the security of our community. Join us in creating a more secure, self-sovereign future for everyone. Together, we can make a difference!`,
+    buttonText: "SUPPORT US",
+
   },
 ];
